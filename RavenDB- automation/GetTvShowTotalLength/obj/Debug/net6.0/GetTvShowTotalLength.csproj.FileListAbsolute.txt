@@ -1,0 +1,17 @@
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\bin\Debug\net6.0\GetTvShowTotalLength.exe
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\bin\Debug\net6.0\GetTvShowTotalLength.deps.json
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\bin\Debug\net6.0\GetTvShowTotalLength.runtimeconfig.json
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\bin\Debug\net6.0\GetTvShowTotalLength.dll
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\bin\Debug\net6.0\GetTvShowTotalLength.pdb
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\obj\Debug\net6.0\GetTvShowTotalLength.csproj.AssemblyReference.cache
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\obj\Debug\net6.0\GetTvShowTotalLength.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\obj\Debug\net6.0\GetTvShowTotalLength.AssemblyInfoInputs.cache
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\obj\Debug\net6.0\GetTvShowTotalLength.AssemblyInfo.cs
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\obj\Debug\net6.0\GetTvShowTotalLength.csproj.CoreCompileInputs.cache
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\obj\Debug\net6.0\GetTvShowTotalLength.csproj.CopyComplete
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\obj\Debug\net6.0\GetTvShowTotalLength.dll
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\obj\Debug\net6.0\refint\GetTvShowTotalLength.dll
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\obj\Debug\net6.0\GetTvShowTotalLength.pdb
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\obj\Debug\net6.0\GetTvShowTotalLength.genruntimeconfig.cache
+C:\Users\lieln\OneDrive\Desktop\RavenDB- automation\gettvshowtotallength\obj\Debug\net6.0\ref\GetTvShowTotalLength.dll

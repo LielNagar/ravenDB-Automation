@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "J3HBGP14MrO/XXwclq41qerbWtCnC6N9UBifJ/tOZj8arSQQANHNvawqF9zN4DWaDXWFyjdE6FSinn1AklejpA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lieln\\OneDrive\\Desktop\\RavenDB- automation\\GetTvShowTotalLength\\GetTvShowTotalLength.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lieln\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
