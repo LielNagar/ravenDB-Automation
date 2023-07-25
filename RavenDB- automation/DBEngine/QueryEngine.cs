@@ -139,44 +139,16 @@ namespace DBEngine
         {
             try
             {
-                // Split the condition by logical operators (and/or)
-                string[] conditions = Regex.Split(_expression, @"(?<!\bor\b|\band\b)\s+(?:or|and)\s+", RegexOptions.IgnoreCase);
-
                 // Create a dynamic parameter for the lambda expression
                 ParameterExpression parameter = Expression.Parameter(typeof(T), "x");
 
-                // Initialize the combined expression with true for 'and' logic and false for 'or' logic
-                Expression combinedExpression = conditions[0].Trim().StartsWith("!")
-                    ? Expression.Constant(false)
-                    : Expression.Constant(true);
+                // Convert the expression to lowercase for case-insensitive comparison
+                string lowerExpression = _expression.ToLower();
 
-                // Process each individual condition
-                foreach (string cond in conditions)
-                {
-                    string individualCondition = cond.Trim();
-                    bool isNotCondition = individualCondition.StartsWith("!");
-                    string cleanCondition = individualCondition.TrimStart('!').Trim();
+                // Parse the entire expression as a lambda expression
+                Expression combinedExpression = DynamicExpressionParser.ParseLambda(new[] { parameter }, typeof(bool), lowerExpression).Body;
 
-                    Expression expression = DynamicExpressionParser.ParseLambda(new[] { parameter }, typeof(bool), cleanCondition).Body;
-
-                    if (isNotCondition)
-                    {
-                        expression = Expression.Not(expression);
-                    }
-
-                    if (individualCondition.Contains("||"))
-                    {
-                        // Combine with 'or' logic
-                        combinedExpression = Expression.OrElse(combinedExpression, expression);
-                    }
-                    else
-                    {
-                        // Combine with 'and' logic
-                        combinedExpression = Expression.AndAlso(combinedExpression, expression);
-                    }
-                }
-
-                // Compile the combined expression with the provided object
+                // Compile the lambda expression with the provided object
                 var lambda = Expression.Lambda<Func<T, bool>>(combinedExpression, parameter);
                 bool isValidCondition = lambda.Compile()(obj);
 
