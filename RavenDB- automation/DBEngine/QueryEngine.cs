@@ -41,7 +41,7 @@ namespace DBEngine
 
                         MatchCollection matches = Regex.Matches(str, @"\b(\w+)\b");
                         string propertyToCheck = matches[0].Groups[1].Value;
-                        if (!orderPropertyNames.Contains(propertyToCheck))
+                        if (!orderPropertyNames.Contains(propertyToCheck.ToLower()))
                         {
                             Console.WriteLine("Orders table doesn't contains one of those fields");
                             return false;
@@ -64,7 +64,7 @@ namespace DBEngine
 
                         MatchCollection matches = Regex.Matches(str, @"\b(\w+)\b");
                         string propertyToCheck = matches[0].Groups[1].Value;
-                        if (!userPropertyNames.Contains(propertyToCheck))
+                        if (!userPropertyNames.Contains(propertyToCheck.ToLower()))
                         {
                             Console.WriteLine("Users table doesn't contains one of those fields");
                             return false;
@@ -77,7 +77,7 @@ namespace DBEngine
         public bool validateQueryString(string sqlQuery)
         {
             // Using Regular Expression to extract the parts
-            Match match = Regex.Match(sqlQuery, @"from\s+(\w+)\s+where\s+(\S+)\s+select\s+([\w\s,]+)");
+            Match match = Regex.Match(sqlQuery, @"^from\s+(\w+)\s+where\s+(.+)\s+select\s+([\w\s,]+)$");
 
             if (match.Success)
             {
@@ -85,7 +85,7 @@ namespace DBEngine
                 this._expression = match.Groups[2].Value;
                 this._field = match.Groups[3].Value;
                 this._fieldsArray = this._field.Split(',').Select(f => f.Trim()).ToArray();
-                this._conditions = Regex.Split(_expression, @"(?<!\bor\b|\band\b)\s+(?:or|and)\s+", RegexOptions.IgnoreCase);
+                this._conditions = Regex.Split(_expression, @"(?<!\bor\b|\band\b)\s+(?:or|and|OR|AND)\s+", RegexOptions.IgnoreCase);
 
                 if (_source != "Orders" && _source != "Users")
                 {

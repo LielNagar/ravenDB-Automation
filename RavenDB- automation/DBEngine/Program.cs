@@ -23,7 +23,8 @@ while (true)
         switch (engine.Source)
         {
             case "Orders":
-                PropertyInfo[] orderProperties = orders[0].GetType().GetProperties();
+                Order orderSample = new Order();
+                PropertyInfo[] orderProperties = orderSample.GetType().GetProperties();
                 foreach (var property in orderProperties)
                 {
                     matrixColumns.Add(property.Name);
@@ -60,7 +61,8 @@ while (true)
                 }
                 break;
             case "Users":
-                PropertyInfo[] userProperties = users[0].GetType().GetProperties();
+                User userSample = new User();
+                PropertyInfo[] userProperties = userSample.GetType().GetProperties();
                 foreach (var property in userProperties)
                 {
                     matrixColumns.Add(property.Name);
@@ -77,7 +79,7 @@ while (true)
                         }
                         else
                         {
-                            switch (engine.FieldsArray[j])
+                            switch (engine.FieldsArray[j].ToLower())
                             {
                                 case "id":
                                     tableView[i, j] = users[i - 1].Id.ToString();
@@ -136,11 +138,16 @@ static List<User> initializeUsers()
         string userLast = lastName[rnd.Next(lastName.Length - 1)];
         string userCity = cities[rnd.Next(cities.Length-1)];
         string userEmail = userFirst + "." + userLast + "@gmail.com"; // Assuming that email can be the same for simplicity
+        userEmail = userEmail.ToLower();
         int userAge = rnd.Next(20, 50);
 
         User user = new User(userFirst + " " + userLast, userID, userCity, userAge, userEmail);
         users.Add(user);
     }
+
+    users.Add(new User("John Doe",21,"Hadera", 30, "jobs@ravendb.net"));
+    users.Add(new User("Hibernate Rhino",22,"Hadera", 30, "jobs@hibernatingrhinos.com"));
+
 
     return users;
 }

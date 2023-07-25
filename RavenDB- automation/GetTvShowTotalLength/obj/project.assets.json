@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lieln\\OneDrive\\Desktop\\RavenDB- automation\\GetTvShowTotalLength\\GetTvShowTotalLength.csproj",
+      "projectUniqueName": "C:\\Users\\lieln\\OneDrive\\Documents\\GitHub\\ravenDB-Automation\\RavenDB- automation\\GetTvShowTotalLength\\GetTvShowTotalLength.csproj",
       "projectName": "GetTvShowTotalLength",
-      "projectPath": "C:\\Users\\lieln\\OneDrive\\Desktop\\RavenDB- automation\\GetTvShowTotalLength\\GetTvShowTotalLength.csproj",
+      "projectPath": "C:\\Users\\lieln\\OneDrive\\Documents\\GitHub\\ravenDB-Automation\\RavenDB- automation\\GetTvShowTotalLength\\GetTvShowTotalLength.csproj",
       "packagesPath": "C:\\Users\\lieln\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lieln\\OneDrive\\Desktop\\RavenDB- automation\\GetTvShowTotalLength\\obj\\",
+      "outputPath": "C:\\Users\\lieln\\OneDrive\\Documents\\GitHub\\ravenDB-Automation\\RavenDB- automation\\GetTvShowTotalLength\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
