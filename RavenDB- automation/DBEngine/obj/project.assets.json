@@ -86,11 +86,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lieln\\OneDrive\\Desktop\\RavenDB- automation\\DBEngine\\DBEngine.csproj",
+      "projectUniqueName": "C:\\Users\\lieln\\OneDrive\\Documents\\GitHub\\ravenDB-Automation\\RavenDB- automation\\DBEngine\\DBEngine.csproj",
       "projectName": "DBEngine",
-      "projectPath": "C:\\Users\\lieln\\OneDrive\\Desktop\\RavenDB- automation\\DBEngine\\DBEngine.csproj",
+      "projectPath": "C:\\Users\\lieln\\OneDrive\\Documents\\GitHub\\ravenDB-Automation\\RavenDB- automation\\DBEngine\\DBEngine.csproj",
       "packagesPath": "C:\\Users\\lieln\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lieln\\OneDrive\\Desktop\\RavenDB- automation\\DBEngine\\obj\\",
+      "outputPath": "C:\\Users\\lieln\\OneDrive\\Documents\\GitHub\\ravenDB-Automation\\RavenDB- automation\\DBEngine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

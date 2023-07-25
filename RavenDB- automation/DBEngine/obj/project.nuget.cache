@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MTX4oet1RhEaDhhsMS+2KBaZbISKBCm7bwJmvVRfTh+tqstj8DYoHdiTcaYhyGtv0/ZiDzIr24WLNg1s5MM8Gg==",
+  "dgSpecHash": "/Hloh5XZfdHEOo43gzVsd15yKi5lrxybB01RFxjE1brGB90VlVLjqnVxYngqneo2Ud33CFyFh1UpiURdl30MXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lieln\\OneDrive\\Desktop\\RavenDB- automation\\DBEngine\\DBEngine.csproj",
+  "projectFilePath": "C:\\Users\\lieln\\OneDrive\\Documents\\GitHub\\ravenDB-Automation\\RavenDB- automation\\DBEngine\\DBEngine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lieln\\.nuget\\packages\\system.linq.dynamic.core\\1.3.3\\system.linq.dynamic.core.1.3.3.nupkg.sha512"
   ],
