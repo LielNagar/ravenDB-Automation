@@ -143,10 +143,10 @@ namespace DBEngine
                 ParameterExpression parameter = Expression.Parameter(typeof(T), "x");
 
                 // Convert the expression to lowercase for case-insensitive comparison
-                string lowerExpression = _expression.ToLower();
+                //string lowerExpression = _expression.ToLower();
 
                 // Parse the entire expression as a lambda expression
-                Expression combinedExpression = DynamicExpressionParser.ParseLambda(new[] { parameter }, typeof(bool), lowerExpression).Body;
+                Expression combinedExpression = DynamicExpressionParser.ParseLambda(new[] { parameter }, typeof(bool), _expression).Body;
 
                 // Compile the lambda expression with the provided object
                 var lambda = Expression.Lambda<Func<T, bool>>(combinedExpression, parameter);

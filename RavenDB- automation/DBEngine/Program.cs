@@ -41,7 +41,7 @@ while (true)
                         }
                         else
                         {
-                            switch (engine.FieldsArray[j])
+                            switch (engine.FieldsArray[j].ToLower())
                             {
                                 case "orderid":
                                     tableView[i, j] = orders[i-1].OrderID.ToString();
